@@ -1,4 +1,3 @@
-import 'package:fair_and_square/groups/bloc/groups_bloc.dart';
 import 'package:fair_and_square/groups/views/groups_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
