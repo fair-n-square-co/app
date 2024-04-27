@@ -5,9 +5,12 @@ import 'model/group.dart';
 
 class TransactionsRepository {
 
+  TransactionsRepository() {
+    GroupsAPI().init();
+  }
+
   Future<List<Group>> getGroups() async {
     final groupsResponse = await GroupsAPI.instance.groupServiceClient.listGroups(grouppb.ListGroupsRequest());
-
     return getGroupsfromProto(groupsResponse); 
   }
 
