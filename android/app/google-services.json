@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "391020026085",
+    "project_id": "fair-n-square-app",
+    "storage_bucket": "fair-n-square-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:391020026085:android:b0cbbdb3a06c4fc8235c0c",
+        "android_client_info": {
+          "package_name": "com.example.fair_and_square"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "391020026085-625s3llvo1eekrh7ug0rmqo2l4q1sjtq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCikVqO4E7MQ_eAtgUiObxhF6lx_CfJCjg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "391020026085-625s3llvo1eekrh7ug0rmqo2l4q1sjtq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

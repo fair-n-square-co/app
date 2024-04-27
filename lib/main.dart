@@ -1,16 +1,20 @@
 import 'package:fair_and_square/groups/views/groups_page.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:transactions_repository/transactions_repository.dart';
+import 'firebase_options.dart';
 
-void main() {
+void main() async {
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   runApp(FairNSquareApp(transactionsRepository: TransactionsRepository()));
 }
 
-
-
 class FairNSquareApp extends StatelessWidget {
-  const FairNSquareApp({required TransactionsRepository transactionsRepository, super.key})
+  const FairNSquareApp(
+      {required TransactionsRepository transactionsRepository, super.key})
       : _transactionsRepository = transactionsRepository;
 
   final TransactionsRepository _transactionsRepository;
@@ -30,15 +34,15 @@ class FairNSquareAppView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-        return MaterialApp(
-          theme: ThemeData(
-            appBarTheme: const AppBarTheme(
-              backgroundColor: Colors.transparent,
-              elevation: 0,
-            ),
-            colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-          ),
-          home: const GroupsPage(),
-        );
+    return MaterialApp(
+      theme: ThemeData(
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Colors.transparent,
+          elevation: 0,
+        ),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+      ),
+      home: const GroupsPage(),
+    );
   }
 }
