@@ -4,6 +4,8 @@ import 'package:firebase_core/firebase_core.dart' show FirebaseOptions;
 import 'package:flutter/foundation.dart'
     show defaultTargetPlatform, kIsWeb, TargetPlatform;
 
+// https://firebase.google.com/docs/projects/learn-more#config-files-objects
+
 /// Default [FirebaseOptions] for use with your Firebase apps.
 ///
 /// Example:
@@ -64,7 +66,8 @@ class DefaultFirebaseOptions {
     messagingSenderId: '391020026085',
     projectId: 'fair-n-square-app',
     storageBucket: 'fair-n-square-app.appspot.com',
-    iosClientId: '391020026085-d35s167jqn9fstrv79ju8drg1ebkn9ck.apps.googleusercontent.com',
+    iosClientId:
+        '391020026085-d35s167jqn9fstrv79ju8drg1ebkn9ck.apps.googleusercontent.com',
     iosBundleId: 'com.example.fairAndSquare',
   );
 
@@ -74,7 +77,8 @@ class DefaultFirebaseOptions {
     messagingSenderId: '391020026085',
     projectId: 'fair-n-square-app',
     storageBucket: 'fair-n-square-app.appspot.com',
-    iosClientId: '391020026085-d35s167jqn9fstrv79ju8drg1ebkn9ck.apps.googleusercontent.com',
+    iosClientId:
+        '391020026085-d35s167jqn9fstrv79ju8drg1ebkn9ck.apps.googleusercontent.com',
     iosBundleId: 'com.example.fairAndSquare',
   );
 
